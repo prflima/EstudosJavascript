@@ -1,0 +1,11 @@
+:root{
+    --pr-color-primary-light: #004cd8;
+    --pr-color-primary: #0041BE;
+
+    --pr-color-danger: #FF2222;
+
+    --pr-color-gray-lighter: #F9FBFD;
+    --pr-color-gray-light: #B8B7B7;
+    --pr-color-gray: #767684;
+    --pr-color-gray-dark: #09090A;
+}
