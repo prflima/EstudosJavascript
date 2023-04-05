@@ -1,0 +1,19 @@
+.pr-input {
+    font-family: var(--font-family-base);
+    font-size: calc(var(--font-size-base) + 8px);
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--pr-color-gray-light);
+    outline: none;
+    transition: border-color .5s;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.pr-input:focus{
+    border-color: var(--pr-color-primary);
+}
+
+.pr-input::placeholder{
+    color: var(--pr-color-gray-dark);
+}

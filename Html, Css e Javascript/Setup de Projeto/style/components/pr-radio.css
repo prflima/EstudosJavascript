@@ -1,0 +1,52 @@
+/* Classe base pr-radio */
+.pr-radio{
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: calc(var(--font-size-base) + 8px);
+    font-family: var(--font-family-base);
+}
+
+/* Esconde o radio button nativo do browser */
+.pr-radio > input{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Estilo base do checkmark */
+.pr-radio >.checkmark{
+    display: inline-block;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--pr-color-gray-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estiliza e preenche o fundo do checkmark quando o radio button é checked */
+.pr-radio >input:checked ~ .checkmark{
+    background-color: white;
+    border-color: var(--pr-color-primary);
+}
+
+/* Estilo base do ponto */
+.pr-radio >.checkmark:after{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    background-color: var(--pr-color-primary);
+    display: none;
+}
+
+/* Mostra o ponto quando radio button é checked */
+.pr-radio >input:checked ~ .checkmark:after{
+    display: block;
+}
