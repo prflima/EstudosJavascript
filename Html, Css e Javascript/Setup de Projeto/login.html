@@ -28,11 +28,13 @@
     <link rel="stylesheet" href="style/base/html.css">
 
     <!-- OBJECTS -->
+    <link rel="stylesheet" href="style/objects/pr-wrapper.css">
 
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="style/components/pr-button.css">
     <link rel="stylesheet" href="style/components/pr-input.css">
     <link rel="stylesheet" href="style/components/pr-radio.css">
+    <link rel="stylesheet" href="style/components/pr-header.css">
 
     <!-- PAGES -->
     <link rel="stylesheet" href="style/pages/login.css">
@@ -51,15 +53,39 @@
                     </div>
                 </div>
             </header>
+
             <main class="main-content">
                 <div class="left">
-                    <!-- <button class="pr-button">Continuar</button> -->
-                    <!-- <input class="pr-input" placeholder="Título"> -->
-                    <label class="pr-radio">
-                        Dev
-                        <input type="radio">
-                        <span class="checkmark"></span>
-                    </label>
+                    <span class="steps">PASSO 1 DE 2</span>
+
+                    <h1 class="pr-main-title">
+                        <span class="up">Olá !</span>
+                        <span class="down">Vamos criar o seu cadastro.</span>
+                    </h1>
+
+                    <div class="radio-buttons">
+                        <h3 class="pr-login-title">Qual o seu perfil?</h3>
+                        <div class="buttons">
+                            <label class="pr-radio">
+                                Dev
+                                <input name="cargo" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="pr-radio">
+                                Cliente
+                                <input name="cargo" type="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input class="pr-input" placeholder="Nome completo">
+                    <input type="date" class="pr-input" placeholder="Data de nascimento">
+                    <input type="email" class="pr-input" placeholder="Email">
+                    <input type="password" class="pr-input" placeholder="Senha">
+
+                    <button class="pr-button">Continuar</button>
                 </div>
                 <div class="right">
                     <img src="assets/image/bg-cubes.png">

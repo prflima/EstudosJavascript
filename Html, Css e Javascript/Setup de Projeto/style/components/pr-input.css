@@ -1,6 +1,6 @@
 .pr-input {
-    font-family: var(--font-family-base);
-    font-size: calc(var(--font-size-base) + 8px);
+    font-family: var(--pr-font-family-base);
+    font-size: calc(var(--pr-font-size-base) + 8px);
     border: none;
     background: none;
     border-bottom: 1px solid var(--pr-color-gray-light);
@@ -8,6 +8,7 @@
     transition: border-color .5s;
     padding-bottom: 10px;
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .pr-input:focus{
