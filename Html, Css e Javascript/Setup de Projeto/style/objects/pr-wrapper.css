@@ -9,6 +9,10 @@
     padding-top: var(--pr-header-size);
 }
 
+.pr-wrapper >.main-content.-one-col{
+    grid-template-columns: 1fr;
+}
+
 .pr-wrapper >.main-content >.left{
     padding-top: 48px;
 }

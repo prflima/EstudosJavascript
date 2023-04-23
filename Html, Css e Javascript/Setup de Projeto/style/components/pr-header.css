@@ -16,11 +16,55 @@
     justify-content: center;
 }
 
-.pr-header >.wrapper >.image-wrapper{
+.pr-header >.wrapper.-has-user{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+/* Logo */
+.pr-header >.wrapper >.logo-wrapper{
     height: var(--pr-header-size);
     padding: 16px 0;
 }
 
-.pr-header >.wrapper >.image-wrapper >.image{
+.pr-header >.wrapper >.logo-wrapper >.image{
     height: 100%;
+}
+
+/* Imagem usuário. */
+.pr-header >.wrapper >.user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.pr-header >.wrapper >.user >.info{
+    text-align: right;
+}
+
+.pr-header >.wrapper >.user >.info >.name{
+    display: block;
+    font-weight: 800;
+    font-size: calc(var(--pr-font-size-base) + 4px);
+    margin-bottom: 3px;
+}
+
+.pr-header >.wrapper >.user >.info >.role{
+    display: block;
+    font-weight: 400;
+    font-size: calc(var(--pr-font-size-base) + 2px);
+}
+
+.pr-header >.wrapper >.user >.photo-wrapper{
+    margin-left: 16px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--pr-color-primary);
+    overflow: hidden;
+}
+
+.pr-header >.wrapper >.user >.photo-wrapper >img{
+    height: 100%;
+    width: 100%;
 }

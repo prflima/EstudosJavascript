@@ -1,0 +1,17 @@
+.pr-list >.pr-wrapper >.main-content .title-button{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr-list >.pr-wrapper >.main-content .title-button >.title{
+    font-size: calc(var(--pr-font-size-base) + 30px);
+    font-weight: 700;
+}
+
+.pr-list >.pr-wrapper >.main-content .title-button >.button-wrapper{
+}
+
+.pr-list >.pr-wrapper >.main-content >.table-wrapper{
+    margin-top: 32px;
+}
