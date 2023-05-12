@@ -1,0 +1,72 @@
+.pr-table {
+    box-shadow: 0px 4px 4px black;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 28px;
+}
+
+/* HEAD */
+.pr-table>.head {
+    font-size: calc(var(--pr-font-size-base) + 6px);
+    font-weight: 600;
+    color: var(--pr-color-gray-light);
+}
+
+.pr-table>.head>.row {
+    display: grid;
+    grid-template-columns: 1fr 200px 200px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* BODY */
+.pr-table>.body {}
+
+.pr-table>.body>.row {
+    display: grid;
+    padding: 24px 32px;
+    grid-template-columns: 1fr 200px 200px;
+    border-bottom: 1px solid var(--pr-color-gray-lighter);
+}
+
+.pr-table>.body>.row :last-child {
+    border-bottom: none;
+}
+
+/* BODY - DESCRIPTION */
+
+.pr-table>.body>.row>.title-description {
+
+}
+
+.pr-table>.body>.row>.title-description>.title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.pr-table>.body>.row>.title-description>.description {
+
+}
+
+/* BODY - PRICE */
+
+.pr-table >.body >.row >.price {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* BODY - ACTIONS */
+.pr-table >.body >.row >.actions {
+
+}
+
+.pr-table >.body >.row >.actions >.edit {
+    color: var(--pr-color-primary);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pr-table >.body >.row >.actions >.delete {
+    color: var(--pr-color-danger);
+    cursor: pointer;
+}

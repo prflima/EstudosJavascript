@@ -4,7 +4,8 @@
 
     --pr-color-danger: #FF2222;
 
-    --pr-color-gray-lighter: #F9FBFD;
+    --pr-color-gray-lightest: #F8FBFD;
+    --pr-color-gray-lighter: rgba(196, 196, 196, 0.35);
     --pr-color-gray-light: #B8B7B7;
     --pr-color-gray: #767684;
     --pr-color-gray-dark: #09090A;
